@@ -77,7 +77,7 @@
           <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
             <a href="#home"><span class="text-[#B68C5A]">Home</span></a>
             <a href="#service">Services <i class="fa-solid fa-chevron-right"></i></a>
-            <a href="">Category<i class="fa-solid fa-chevron-right"></i></a>
+            <a href="#catagory">Category<i class="fa-solid fa-chevron-right"></i></a>
             <a href="#contact">Contact Us <i class="fa-solid fa-chevron-right"></i></a>
           </ul>
         </div>
@@ -87,7 +87,7 @@
         <ul class="menu menu-horizontal px-1 *:mx-2">
           <a href="#home"><span class="text-[#B68C5A] font-bold">Home</span></a>
           <a href="#service">Services <i class="fa-solid fa-chevron-right"></i></a>
-          <a href="">Category <i class="fa-solid fa-chevron-right"></i></a>
+          <a href="#catagory">Category <i class="fa-solid fa-chevron-right"></i></a>
           <a href="#contact">Contact Us <i class="fa-solid fa-chevron-right"></i></a>
         </ul>
       </div>
@@ -101,20 +101,66 @@
     <!-- background and description -->
     <div class="hero lg:w-full h-[650px] rounded-xl" id="home" style="background-image: url(images/back.png)">
       <div class="hero-overlay "></div>
-      <div class="hero-content text-center text-neutral-content">
-        <div class="">
-          <h1 class=" mb-5 text-3xl lg:text-7xl font-extrabold garamond-font">We Provide Best<br>Rent Services</h1>
-          <p class="poppins-font mb-5">There are many variations of passages of Lorem Ipsum available, but the majority
-            have suffered alteration in some form, by injected humour.</p>
+      <div class="flex gap-3 lg:gap-24 lg:flex-row flex-col justify-center">
+
+        <!-- content -->
+        <div class="hero-content text-left text-neutral-content">
           <div class="">
+            <h1 class=" mb-5 text-3xl lg:text-7xl font-extrabold garamond-font">We Provide Best<br>Rent Services</h1>
+            <p class="poppins-font mb-5">There are many variations of passages of Lorem Ipsum available,<br> but the
+              majority
+              have suffered alteration in some form, by injected humour.</p>
+
+          </div>
+        </div>
+
+        <!-- map -->
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14602.702528983526!2d90.3435586996948!3d23.794562358241198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0e96fce29dd%3A0x6ccd9e51aba9e64d!2sMirpur-1%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1715109151853!5m2!1sen!2sbd"
+            width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <div class="mt-5">
             <input type="text" placeholder="Search your home" class="py-3 pl-4 pr-16 rounded-xl mb-3">
             <button class="btn btn-primary border-none">Search</button>
           </div>
         </div>
+
       </div>
+
+
     </div>
   </header>
   <main>
+
+
+
+    <!-- rent types -->
+
+    <section class="container mx-auto mt-16 mb-8 text-center" id="catagory">
+      <h1 class="font-bold text-2xl">We are <span class="text-[#B68C5A] underline">offering :</span> </h1>
+      <div class="flex justify-around mt-10 lg:flex-row flex-col gap-5">
+        <div>
+          <img src="images/bachelor.jpeg" alt="" class="">
+          <h3 class="mt-4 text-xl font-semibold text-[#F4511E]">Bachelor</h3>
+        </div>
+
+        <div>
+          <img src="images/family.jpeg" alt="">
+          <h3 class="mt-4 text-xl font-semibold text-[#F4511E]">Family</h3>
+        </div>
+
+        <div>
+          <img src="images/office.jpg" alt="" class="w-[80%]">
+          <h3 class="mt-4 text-xl font-semibold text-[#F4511E]">Office</h3>
+        </div>
+
+
+
+      </div>
+    </section>
+
 
     <!-- advertising section -->
     <section class="container mx-auto mt-16 mb-8 text-center">
@@ -162,12 +208,6 @@
 
     </section>
 
-
-    <!-- Category -->
-
-    <section>
-
-    </section>
 
 
     <!-- Property list -->
@@ -280,44 +320,57 @@
 
     <!-- about service provided -->
     <section class="container mx-auto text-center mt-8 p-8 rounded-2xl" id="service">
-      <div class="flex justify-between">
+      <div class="flex justify-between flex-col lg:flex-row">
         <!-- images -->
-        <div class="grid grid-cols-2 gap-5 justify-between">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 justify-between">
 
-          <div class="hero w-60 h-60 rounded-lg" style="background-image: url(images/room.png);">
-            <div class="hero-overlay bg-opacity-30"></div>
-            <div class="">
-              <h1 class="text-xl font-bold text-[#F4511E]">Flexible Leases</h1>
+          <div class="">
+
+            <div class="hero w-60 h-60 rounded-lg" style="background-image: url(images/room.png);">
+              <div class="hero-overlay bg-opacity-30"></div>
+              <div class="">             
+              </div>           
             </div>
+            <h1 class="text-xl font-bold text-[#F4511E] mt-2">Flexible Leases</h1>
+            
+          </div>
+          <div class="">
+
+            <div class="hero w-60 h-60 rounded-lg" style="background-image: url(images/happy.jpeg);">
+              <div class="hero-overlay bg-opacity-30"></div>
+              <div class="">             
+              </div>           
+            </div>
+            <h1 class="text-xl font-bold text-[#F4511E] mt-2">7-Day Happiness <br>Guaranteed</h1>
+
+          </div>
+          <div class="">
+
+            <div class="hero w-60 h-60 rounded-lg" style="background-image: url(images/clean.jpeg);">
+              <div class="hero-overlay bg-opacity-30"></div>
+              <div class="">             
+              </div>           
+            </div>
+            <h1 class="text-xl font-bold text-[#F4511E] mt-2">Monthly House <br>Cleaning</h1>
+
+          </div>
+          <div class="">
+
+            <div class="hero w-60 h-60 rounded-lg" style="background-image: url(images/roommates.jpeg);">
+              <div class="hero-overlay bg-opacity-30"></div>
+              <div class="">             
+              </div>           
+            </div>
+            <h1 class="text-xl font-bold text-[#F4511E] mt-2">Choose Your <br> Own Roommate</h1>
+
           </div>
 
-          <div class="hero w-60 h-60 rounded-lg" style="background-image: url(images/happy.jpeg);">
-            <div class="hero-overlay bg-opacity-30"></div>
-            <div class="">
-              <h1 class="text-xl font-bold text-[#F4511E]">7-Day Happiness
-                Guaranteed</h1>
-            </div>
-          </div>
 
-          <div class="hero w-60 h-60 rounded-lg" style="background-image: url(images/clean.jpeg);">
-            <div class="hero-overlay bg-opacity-30"></div>
-            <div class="">
-              <h1 class="text-xl font-bold text-[#F4511E]">Monthly House <br>Cleaning</h1>
-            </div>
-          </div>
-
-          <div class="hero w-60 h-60 rounded-lg" style="background-image: url(images/roommates.jpeg);">
-            <div class="hero-overlay bg-opacity-30"></div>
-            <div class="">
-              <h1 class="text-xl font-bold text-[#F4511E]">Choose Your
-                Own Roommate</h1>
-            </div>
-          </div>
 
         </div>
 
         <!-- details -->
-        <div class="w-[60%] mt-40  text-start">
+        <div class="lg:w-[60%] mt-10 lg:mt-40  text-start">
           <h2 class="text-3xl font-bold text mb-5">Flexibility and options <br> to suit your lifestyle.</h2>
           <p class="">You need it? We got it. We make finding your next home easy, comfortable, and simple. <br> From
             our happiness guarantee to our selective roommate finder option. We provide you the flexibility that you
@@ -331,7 +384,8 @@
     <!-- Property Add section -->
 
     <section class="container mx-auto text-center mt-8 p-8">
-      <h2 class="text-2xl font-bold text-center">Your property with us and be Confident that Your Room will be Filled Out!</h2>
+      <h2 class="text-2xl font-bold text-center">Your property with us and be Confident that Your Room will be Filled
+        Out!</h2>
 
       <div class="bg-slate-300 p-20 rounded-2xl shadow-xl mt-10 text-center">
 
@@ -371,7 +425,7 @@
           </div>
           <div class="text-left lg:col-span-3">
             <h3 class="font-bold mb-3">Description <span class="text-red-500">*</span></h3>
-            <textarea name="" id=""placeholder="Type Here" class="lg:w-[80%] rounded-lg p-4 h-28"></textarea>
+            <textarea name="" id="" placeholder="Type Here" class="lg:w-[80%] rounded-lg p-4 h-28"></textarea>
           </div>
 
         </div>
@@ -379,8 +433,8 @@
         <!-- upload Photos -->
         <h2 class="font-bold text-left lg:ml-20 mt-10">Upload Photos</h2>
         <div class="mt-2 border border-dashed border-[#F4511E] lg:mx-20 p-8 lg:p-20">
-            <h3 class="font-bold">Drag your images here, or <span class="text-[#F4511E]">browse</span></h3>
-            <p class="text-sm">Supported:  JPG, JPEG, PNG</p>
+          <h3 class="font-bold">Drag your images here, or <span class="text-[#F4511E]">browse</span></h3>
+          <p class="text-sm">Supported: JPG, JPEG, PNG</p>
         </div>
 
         <button class="bg-[#F4511E] btn mt-10 btn-primary border-none lg:px-32">Add New Property</button>
@@ -400,7 +454,7 @@
           the majority have <br> suffered alteration in some form, by injected humour.</p>
       </div>
       <!-- carousel -->
-      <div>
+      <div class="">
         <div class="carousel w-full h-[550px] rounded-xl">
           <!-- first slider -->
           <div id="slide1" class="carousel-item relative w-full ">
@@ -427,7 +481,7 @@
           </div>
           <!-- second slider -->
           <div id="slide2" class="carousel-item relative w-full">
-            <div class="hero" style="background-image: url(images/back.png);">
+            <div class="hero" style="background-image: url(images/download.jpeg);">
               <div class="hero-overlay bg-opacity-70"></div>
               <div class="hero-content text-center text-neutral-content">
                 <div class="">
@@ -450,7 +504,7 @@
           </div>
           <!-- third slider -->
           <div id="slide3" class="carousel-item relative w-full">
-            <div class="hero" style="background-image: url(images/back.png);">
+            <div class="hero" style="background-image: url(images/slider-3.jpeg);">
               <div class="hero-overlay bg-opacity-70"></div>
               <div class="hero-content text-center text-neutral-content">
                 <div class="">

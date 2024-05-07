@@ -32,7 +32,21 @@
       font-weight: 600;
       border-radius: 8px;
     }
-   
+    #icons i {
+    position: relative;
+    /* width: 300px; */
+    /* height: 200px; */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition-property: transform;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+#icons i:hover {
+    transform: scale(1.5);
+}
   </style>
 </head>
 
@@ -109,7 +123,7 @@
       <div class="flex flex-col lg:flex-row">
         <img src="images/unsplash_oGmf8o53LeE.png" alt="" class="flex-grow-0">
         <div class="flex-grow mt-24">
-            <div class="grid justify-around text-left grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 ml-8 lg:ml-16">
+            <div class="grid justify-around text-left grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 ml-8 lg:ml-16" id="icons">
                 
                   <div class="">
                     <i class="fa-solid fa-dollar-sign  bg-white p-5 text-[#F4511E] text-4xl rounded-xl"></i>
@@ -159,10 +173,10 @@
       </div>
 
       <!-- properties -->
-      <div class="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-10">
+      <div class="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-10  ">
 
         <!-- 1st Property -->
-        <div class="card w-[360px] bg-base-100 shadow-xl rounded-t-3xl">
+        <div class="card w-[360px] bg-base-100 shadow-xl rounded-t-3xl transition-transform duration-300 ease-in-out transform hover:scale-105">
           <figure><img src="images/property-1.png" alt="" /></figure>
           <div class="card-body">
             <h2 class="card-title">Sweet-Home,Road-2,Block-C,Mirpur</h2>
@@ -174,7 +188,7 @@
           </div>
         </div>
         <!-- 2nd Property -->
-        <div class="card w-[360px] bg-base-100 shadow-xl rounded-t-3xl">
+        <div class="card w-[360px] bg-base-100 shadow-xl rounded-t-3xl  transition-transform duration-300 ease-in-out transform hover:scale-105">
           <figure><img src="images/property-2.png" alt="" /></figure>
           <div class="card-body">
             <h2 class="card-title">Sweet-Home,Road-2,Block-C,Mirpur</h2>
@@ -186,7 +200,7 @@
           </div>
         </div>
         <!-- 3rd Property -->
-        <div class="card w-[360px] bg-base-100 shadow-xl rounded-t-3xl">
+        <div class="card w-[360px] bg-base-100 shadow-xl rounded-t-3xl  transition-transform duration-300 ease-in-out transform hover:scale-105">
           <figure><img src="images/property-3.png" alt="" /></figure>
           <div class="card-body">
             <h2 class="card-title">Sweet-Home,Road-2,Block-C,Mirpur</h2>
@@ -198,7 +212,7 @@
           </div>
         </div>
         <!-- 4th Property -->
-        <div class="card w-[360px] bg-base-100 shadow-xl rounded-t-3xl">
+        <div class="card w-[360px] bg-base-100 shadow-xl rounded-t-3xl  transition-transform duration-300 ease-in-out transform hover:scale-105">
           <figure><img src="images/property-4.png" alt="" /></figure>
           <div class="card-body">
             <h2 class="card-title">Sweet-Home,Road-2,Block-C,Mirpur</h2>
@@ -210,7 +224,7 @@
           </div>
         </div>
         <!-- 5th Property -->
-        <div class="card w-[360px] bg-base-100 shadow-xl rounded-t-3xl">
+        <div class="card w-[360px] bg-base-100 shadow-xl rounded-t-3xl  transition-transform duration-300 ease-in-out transform hover:scale-105">
           <figure><img src="images/property-5.png" alt="" /></figure>
           <div class="card-body">
             <h2 class="card-title">Sweet-Home,Road-2,Block-C,Mirpur</h2>
@@ -222,9 +236,9 @@
           </div>
         </div>
         <!-- 6th Property -->
-        <div class="card w-[360px] bg-base-100 shadow-xl rounded-t-3xl">
+        <div class="card w-[360px] bg-base-100 shadow-xl rounded-t-3xl   transition-transform duration-200 ease-in-out transform hover:scale-105">
           <figure><img src="images/property-6.png" alt="" /></figure>
-          <div class="card-body">
+          <div class="card-body   ">
             <h2 class="card-title">Sweet-Home,Road-2,Block-C,Mirpur</h2>
             <p>Family/Bachelor</p>
             <h2 class="text-lg font-semibold text-[#F4511E]">18000/Month</h2>
@@ -234,6 +248,7 @@
           </div>
         </div>
 
+      
 
       </div>
 
@@ -306,7 +321,7 @@
     <section class="container mx-auto my-16 text-center">
       <!-- section header -->
       <div>
-        <h2 class="font-extrabold garamond-font text-4xl mb-6">What Our Client Say</h2>
+        <h2 class="font-extrabold garamond-font text-4xl mb-6">What Our <span class="text-[#B68C5A] underline">Client</span>  Say</h2>
         <p class="poppins-font text-[#707070] mb-16">There are many variations of passages of Lorem Ipsum available, but
           the majority have <br> suffered alteration in some form, by injected humour.</p>
       </div>
@@ -390,7 +405,7 @@
     <section class="container mx-auto my-28 text-center">
       <!-- section header -->
       <div class="">
-        <h2 class="font-extrabold garamond-font text-4xl mb-6">Frequently Asked Any Questions</h2>
+        <h2 class="font-extrabold garamond-font text-4xl mb-6">Frequently Asked <span class="text-[#B68C5A] underline">Any Questions</span></h2>
         <p class="poppins-font text-[#707070] mb-16">There are many variations of passages of Lorem Ipsum available, but
           the majority have <br> suffered alteration in some form, by injected humour.</p>
       </div>
@@ -443,7 +458,7 @@
     <section class="container mx-auto my-28 text-center">
       <!-- section header -->
       <div class="">
-        <h2 class="font-extrabold garamond-font text-4xl mb-6">Contact With Us</h2>
+        <h2 class="font-extrabold garamond-font text-4xl mb-6"> <span class="text-[#B68C5A] underline">Contact</span> With Us</h2>
         <p class="poppins-font text-[#707070] mb-16">There are many variations of passages of Lorem Ipsum available, but
           the majority have <br> suffered alteration in some form, by injected humour.</p>
       </div>

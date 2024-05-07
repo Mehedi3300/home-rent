@@ -74,22 +74,20 @@
             </svg>
           </div>
           <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-            <a href=""><span class="text-[#B68C5A]">Home</span></a>
-            <a href="">Services <i class="fa-solid fa-chevron-right"></i></a>
-            <a href="">Cases <i class="fa-solid fa-chevron-right"></i></a>
+            <a href="#home"><span class="text-[#B68C5A]">Home</span></a>
+            <a href="#service">Services <i class="fa-solid fa-chevron-right"></i></a>
             <a href="">Blog <i class="fa-solid fa-chevron-right"></i></a>
-            <a href="">Contact Us <i class="fa-solid fa-chevron-right"></i></a>
+            <a href="#contact">Contact Us <i class="fa-solid fa-chevron-right"></i></a>
           </ul>
         </div>
         <a class="btn btn-ghost text-xl"><img src="images/logo99.png" alt=""></a>
       </div>
       <div class="navbar-center hidden lg:flex gap-6">
         <ul class="menu menu-horizontal px-1 *:mx-2">
-          <a href=""><span class="text-[#B68C5A] font-bold">Home</span></a>
-          <a href="">Services <i class="fa-solid fa-chevron-right"></i></a>
-          <a href="">Cases <i class="fa-solid fa-chevron-right"></i></a>
+          <a href="#home"><span class="text-[#B68C5A] font-bold">Home</span></a>
+          <a href="#service">Services <i class="fa-solid fa-chevron-right"></i></a>        
           <a href="">Blog <i class="fa-solid fa-chevron-right"></i></a>
-          <a href="">Contact Us <i class="fa-solid fa-chevron-right"></i></a>
+          <a href="#contact">Contact Us <i class="fa-solid fa-chevron-right"></i></a>
         </ul>
       </div>
       <div class="navbar-end lg:gap-5 gap-2">
@@ -99,7 +97,7 @@
     </div>
 
     <!-- background and description -->
-    <div class="hero lg:w-full h-[650px] rounded-xl" style="background-image: url(images/back.png)">
+    <div class="hero lg:w-full h-[650px] rounded-xl" id="home" style="background-image: url(images/back.png)">
       <div class="hero-overlay "></div>
       <div class="hero-content text-center text-neutral-content">
         <div class="">
@@ -264,7 +262,7 @@
 
 
     <!-- about service provided -->
-    <section class="container mx-auto text-center mt-8 p-8 rounded-2xl">
+    <section class="container mx-auto text-center mt-8 p-8 rounded-2xl" id="service">
         <div class="flex justify-between">
           <!-- images -->
           <div class="grid grid-cols-2 gap-5 justify-between">
@@ -455,7 +453,7 @@
       </div>
     </section>
     <!-- Contact section -->
-    <section class="container mx-auto my-28 text-center">
+    <section class="container mx-auto my-28 text-center" id="contact">
       <!-- section header -->
       <div class="">
         <h2 class="font-extrabold garamond-font text-4xl mb-6"> <span class="text-[#B68C5A] underline">Contact</span> With Us</h2>
@@ -528,7 +526,6 @@
       <header class="footer-title lg:mt-32 mb-4">Useful Link</header>
       <a class="link link-hover mb-4">Homes</a>
       <a class="link link-hover mb-4">About us</a>
-      <a class="link link-hover mb-4">Cases</a>
       <a class="link link-hover mb-4">Blog</a>
       <a class="link link-hover mb-4">Contact Us</a>
     </nav>
